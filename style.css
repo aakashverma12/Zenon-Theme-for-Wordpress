@@ -107,6 +107,10 @@ This theme, like WordPress, is licensed under the GPL.
 
 /* The Post System */
 
+.url_home {
+	cursor: pointer;
+}
+
 .post_title {
 	text-align: center;
 	font-size: 2em;
@@ -114,6 +118,7 @@ This theme, like WordPress, is licensed under the GPL.
 	border-bottom: 2px solid white;
 	width: 104%;
 	border-top: 2px solid white;
+	cursor: pointer;
 }
 
 .post_content {
@@ -361,7 +366,8 @@ a:visited {
 
 .trans {
 	transition: all .3s;
-	background-color: rgba(0,0,0,.6)
+	background-color: rgba(0,0,0,.6);
+	margin-bottom: 6%;
 }
 
 .trans.ng-show {
@@ -402,4 +408,84 @@ a:visited {
 
 .footer:hover {
 	background-color: #ad0f0f;
+}
+
+/* The Comments Area */
+
+#comments {
+	width: 100%;
+	border: 1px solid #4a4a4a;
+}
+
+.comments-title {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.comment-respond {
+	padding: 2%;
+}
+
+textarea#comment {
+	background-color: transparent;
+	transition: all .2s;
+}
+
+textarea#comment:focus{
+	background-color: rgb(20,20,20);
+}
+
+input#submit {
+	margin: 2%;
+	margin-top: 5%;
+	cursor: pointer;
+	background-color: rgb(20,20,20);
+	padding: 2%;
+	border: 2px solid white;
+	color:white;
+	transition: all .2s;
+}
+
+input#submit:hover {
+	border: 2px solid #2196f3;
+}
+
+.comment-form-comment >label {
+	margin-top: 0px;
+	display: block;
+	font-size: 1.2em
+}
+
+.avatar-42 {
+	border-radius: 21px;
+}
+
+ol > li {
+	padding: 2%;
+	border: 1px solid white;
+	list-style-type: none;
+	margin-top: 2%;
+}
+
+ol {
+	padding: 10px;
+	list-style-type: none
+}
+
+.vcard {
+	margin: 1%;
+}
+
+#cancel-comment-reply-link {
+	margin: 2%;
+	cursor: pointer;
+	background-color: rgb(20,20,20);
+	padding: 2%;
+	border: 2px solid white;
+	color:white;
+	transition: all .2s;
+}
+
+#cancel-comment-reply-link:hover {
+	border: 2px solid #2196f3;
 }

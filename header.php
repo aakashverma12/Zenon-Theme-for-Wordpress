@@ -52,11 +52,16 @@
 </div>
 <!-- The Entry -->
 	<div class="black container-fluid" style="position: absolute;top:0%;height: 100%;background-color: rgb(20,20,20);width: 100%;transition: all 1s;">
-	<div class="col-md-8 col-xs-12 site_title row">
-		<div class="col-md-6 site_title_name">
+	<div class="col-md-8 col-xs-12 site_title row ">
+		<script>
+			$('.url_home').click(function() {
+				window.location.href = "<?php echo get_home_url();?>";
+			});
+		</script>
+		<div class="col-md-6 site_title_name url_home">
 			<?php bloginfo('name'); ?>
 		</div>
-		<div class="col-md-6 site_title_des">
+		<div class="col-md-6 site_title_des url_home">
 			<?php bloginfo('description');?>
 		</div>
 		<div class="experience">

@@ -77,6 +77,4 @@ $(document).ready(function(){
 		pauseOnHover:false,
 	});
 
-	// The social buttons
-	
 })

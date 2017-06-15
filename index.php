@@ -27,7 +27,7 @@
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myCtrl.js"></script>
 	</head>
 <body style="background-color: white;transition: all 1s;color:black">  -->
-<div class="wrapper_body container-fluid" ng-app="myApp" ng-controller="myCtrl">
+<div class="wrapper_body container-fluid" ng-app="myApp" ng-controller="myCtrl" style="border-top:2px solid white">
 
 	<!-- The Spectrum New -->
 	<div class="col-md-2 side_post_wrapper">
@@ -56,6 +56,11 @@
 			</div>	
 			<div class="row col-md-12 post_title">
 				<?php the_title()?>
+				<script>
+					$('.post_title').click(function() {
+						window.location.href = "<?php echo get_permalink();?>";
+					});
+				</script>
 			</div>
 			<div class="row col-md-12 post_content">
 				<?php the_content("<br><span class='readmore'>Dig More</span>"); ?>

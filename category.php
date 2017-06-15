@@ -30,7 +30,6 @@
 				</div>
 				<div class="row col-md-12 post_content">
 					<?php the_content("<br><span class='readmore'>Dig More</span>"); ?>
-					<?php comments_template(); ?> 
 				</div>
 			</div>
 		<?php endwhile; ?>
