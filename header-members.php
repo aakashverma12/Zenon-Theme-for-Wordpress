@@ -137,7 +137,8 @@
 								transition: all 1s;
 								left: 0px;
 								height: inherit;">
-		<?php echo get_the_post_thumbnail( $post_id);?>
+		<img src="<?php bloginfo( 'template_directory' );?>/images/memberswallpaper.jpg" style="width: 100%;
+		height: 130%;border-bottom: 2px solid #2196f3"">
 	</div>
 	<div class="container-fluid row" style="
 											padding-top: 2%;
@@ -181,7 +182,7 @@
 					transform: all .4s;
 					text-decoration: none;">
 			<div style="color: white;border:2px solid white;padding: 2%;">
-				<?php the_title()?>	
+				Our RockStars
 			</div><br>
 			<i class="fa fa-facebook-square"></i>&nbsp;
 			&nbsp;<i class="fa fa-instagram"></i>&nbsp;

@@ -21,12 +21,7 @@
 					</div>
 				</div>	
 				<div class="row col-md-12 post_title">
-					<?php the_title()?>
-					<script>
-						$('.post_title').click(function() {
-							window.location.href = "<?php echo get_permalink();?>";
-						});
-					</script>		
+					<a href="<?php echo get_permalink();?>" class="link_post"><?php the_title()?></a>
 				</div>
 				<div class="row col-md-12 post_content">
 					<?php the_content("<br><span class='readmore'>Dig More</span>"); ?>

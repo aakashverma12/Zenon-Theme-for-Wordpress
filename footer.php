@@ -25,11 +25,20 @@ $(function(){
 					'transition': 'all .5s'
 				});
 				$('.menu').css('visibility', 'visible');
-				$('.site_title').css({
-					'background-color': 'rgba(255,255,255,.2)',
-                  	'border': '2px solid white'
-				});
-				$('.black').css('background-color', 'transparent');
+				if ($(window).width() > 960) {
+					$('.black').css('background-color', 'transparent');
+					$('.site_title').css({
+						'background-color': 'rgba(255,255,255,.2)',
+	                  	'border': '2px solid white'
+					});
+				}
+				else {
+					$('.black').css('background-color', 'rgba(255,255,255,.2)');
+					$('.site_title').css({
+						'background-color': 'transparent',
+	                  	'border': '0px solid white'
+					});
+				}
 			},1000);
 			setTimeout(function(){
 				$("#menu-the-navigation li").each(function(idx, li) {
@@ -44,4 +53,5 @@ $(function(){
 	});
 })
 </script>
+<script src="<?php bloginfo( 'template_directory' );?>/js/main.js"></script>
 </html> 

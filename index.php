@@ -37,11 +37,11 @@
 					<?php the_title()?>
 			</div>
 		<?php endwhile; ?>
-		Try Clicking!
+		<em style="font-size: 1.2em">Clicking These will switch Posts</em>
 	</div>
 
 	<!-- Posts -->
-	<div class="col-md-8 row col-xs-12 post_wrapper container-fluid row">
+	<div class="col-md-8 row post_wrapper container-fluid row">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="col-md-12 single_post trans" 
 			ng-show="layout == <?php echo get_the_ID();?> && layoutx == <?php echo get_the_ID();?>"
@@ -55,12 +55,7 @@
 				</div>
 			</div>	
 			<div class="row col-md-12 post_title">
-				<?php the_title()?>
-				<script>
-					$('.post_title').click(function() {
-						window.location.href = "<?php echo get_permalink();?>";
-					});
-				</script>
+				<a href="<?php echo get_permalink();?>" class="link_post"><?php the_title()?></a>
 			</div>
 			<div class="row col-md-12 post_content">
 				<?php the_content("<br><span class='readmore'>Dig More</span>"); ?>
@@ -75,4 +70,3 @@
 	</div>
 </div>
 <?php get_footer();?>
-<script src="<?php bloginfo( 'template_directory' );?>/js/main.js"></script>

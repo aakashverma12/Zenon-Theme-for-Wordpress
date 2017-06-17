@@ -32,6 +32,7 @@
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myApp.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myCtrl.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/slick.min.js"></script>
+		<script src="<?php bloginfo( 'template_directory' );?>/js/flowtype.js"></script>
 	</head>
 <body style="background-color: rgb(20, 20, 20);transition: all 1s" >
 
@@ -58,10 +59,10 @@
 				window.location.href = "<?php echo get_home_url();?>";
 			});
 		</script>
-		<div class="col-md-6 site_title_name url_home">
+		<div class="site_title_name url_home">
 			<?php bloginfo('name'); ?>
 		</div>
-		<div class="col-md-6 site_title_des url_home">
+		<div class="site_title_des url_home">
 			<?php bloginfo('description');?>
 		</div>
 		<div class="experience">

@@ -77,4 +77,52 @@ $(document).ready(function(){
 		pauseOnHover:false,
 	});
 
+	// Responsive Jquery
+	if ($(window).width() < 960 && $(window).width() > 500) {
+   			$(".side_post_wrapper").css('transform', 'translateX(0px)');
+   			$(".post_wrapper").css({
+   				"padding-left": "3%",
+   				"padding-right": "3%"
+   			});
+   			$(".site_title_name").css('font-size', '3em');
+   			$(".site_title_des").css('font-size', '1.6em');
+   			$(".single_header_name").css('font-size', '3em');
+   			$(".single_header_des").css('font-size', '.7em');
+   			$(".experience").css('font-size', '1.6em');
+   			$('.title_post_side').css('margin-bottom', '5%');
+   			$(".menu").css('font-size', '1.4em');
+		}
+	else if ($(window).width() < 500) {
+			$(".side_post_wrapper").css('transform', 'translateX(0px)');
+   			$(".post_wrapper").css({
+   				"padding-left": "2%",
+   				"padding-right": "2%"
+   			});
+   			$(".site_title_name").css('font-size', '2em');
+   			$(".site_title_des").css('font-size', '1.3em');
+   			$(".single_header_name").css('font-size', '2em');
+   			$(".single_header_des").css('font-size', '.5em');
+   			$(".experience").css('font-size', '1.3em');
+   			$(".menu").css('font-size', '1.4em');
+   			$(".ani_post").css('height', '20%');
+   			$(".member_title").css('font-size', '1.2em');
+   			$(".member_icon").css('width', '50%');
+   			$(".member_text_box").css('width', '50%');
+   			$(".member_contents").css('font-size', '.8em');
+   			$(".traingle_two").css('background-position', '90% 51%');
+	}
+	// Resonsive Font, FlowType.js
+	$('.post_content').flowtype({
+		minimum : 500,
+		maximum : 1920,
+		minFont : 6,
+ 		maxFont : 16
+	});
+	$('.p_date').flowtype({
+		minimum : 500,
+		maximum : 1920,
+		minFont : 12,
+ 		maxFont : 24,
+ 		fontRatio : 26
+	});
 })
