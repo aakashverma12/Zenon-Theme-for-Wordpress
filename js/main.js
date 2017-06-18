@@ -110,13 +110,18 @@ $(document).ready(function(){
    			$(".member_text_box").css('width', '50%');
    			$(".member_contents").css('font-size', '.8em');
    			$(".traingle_two").css('background-position', '90% 51%');
+   			$(".single_post").css({
+   				'border': '2px solid white',
+   				'border-radius': '1px'
+   			});
 	}
 	// Resonsive Font, FlowType.js
 	$('.post_content').flowtype({
 		minimum : 500,
 		maximum : 1920,
 		minFont : 6,
- 		maxFont : 16
+ 		maxFont : 14,
+ 		fontRatio : 40
 	});
 	$('.p_date').flowtype({
 		minimum : 500,
