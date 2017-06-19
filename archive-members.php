@@ -5,7 +5,7 @@
 		<!-- Posts -->
 		<div class="col-md-12 row post_wrapper container-fluid row">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="col-md-12 single_post trans container-fluid ani_post" style="height: 35%;padding: 0px;border-radius: 0px;
+			<div class="col-md-12 single_postx trans container-fluid ani_post" style="height: 35%;padding: 0px;border-radius: 0px;
 																					background-color: rgb(20,20,20);">
 				<div class="member_icon" style="padding: 0px;
 												width: 40%;

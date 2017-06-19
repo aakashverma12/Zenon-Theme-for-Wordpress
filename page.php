@@ -9,7 +9,7 @@
 	<div class="col-md-8 post_single">
 
 		<!-- Posts -->
-		<div class="col-md-12 row col-xs-12 post_wrapper container-fluid row">
+		<div class="col-md-12 row post_wrapper container-fluid row">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="col-md-12 single_post trans">
 				<div class="row col-md-12 post_ava">

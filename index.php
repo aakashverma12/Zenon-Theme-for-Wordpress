@@ -32,17 +32,31 @@
 	<!-- The Spectrum New -->
 	<div class="col-md-2 side_post_wrapper">
 		<h1>Latest Posts</h1>
-		<?php while ( have_posts() ) : the_post();?>
+		<?php $i = 0;
+			  $latest = 0;?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php if ($i == 0)
+				{
+					$GLOBALS['latest'] = get_the_ID();
+				}
+			?>
 			<div class="title_post_side" ng-click="check('<?php echo get_the_ID();?>')" ng-style="{transform: layout == '<?php echo get_the_ID();?>' ? 'translate3d(5px,-5px,0px)': 'translate3d(0px,0px,0px)'}">
 					<?php the_title()?>
 			</div>
+			<div id="post_latest" style="visibility: hidden;display: none">
+				<?php echo $latest;?>
+			</div>
+		<?php $i++;?>
 		<?php endwhile; ?>
-		<em style="font-size: 1.2em">Clicking These will switch Posts</em>
+		<em style="font-size: 1.2em">Clicking These will switch Posts</em><br><br>
+		<p class="next_post" style="width: 100%"><?php next_posts_link( $link = "Previous Posts ->"); ?></p>
+		<p class="next_post" style="width: 100%"><?php previous_posts_link($link = "Go Back ->"); ?></p>
 	</div>
 
 	<!-- Posts -->
 	<div class="col-md-8 row post_wrapper container-fluid row">
 	<?php while ( have_posts() ) : the_post(); ?>
+
 		<div class="col-md-12 single_post trans" 
 			ng-show="layout == <?php echo get_the_ID();?> && layoutx == <?php echo get_the_ID();?>"
 				>
@@ -61,6 +75,7 @@
 				<?php the_content("<br><span class='readmore'>Dig More</span>"); ?>
 			</div>
 		</div>
+
 	<?php endwhile; ?>
 	</div>
 

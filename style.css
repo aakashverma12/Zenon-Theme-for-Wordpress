@@ -162,6 +162,16 @@ This theme, like WordPress, is licensed under the GPL.
 	background-color: rgba(0,0,0,.4);
 }
 
+.single_postx {
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 4px 4px 14px 1px black;
+}
+
+.single_postx:hover {
+	background-color: rgba(0,0,0,.4);
+}
+
 .title_post_side {
 	margin: 2%;
 	cursor: pointer;
@@ -235,6 +245,11 @@ a:visited {
 .link_post:visited {
 	color:inherit;
 	text-decoration: none;
+}
+
+.next_post > a {
+	border:2px solid red;
+	padding: 4%
 }
 /* The Sidebar */
 

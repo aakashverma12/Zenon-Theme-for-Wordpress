@@ -30,7 +30,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myApp.js"></script>
-		<script src="<?php bloginfo( 'template_directory' );?>/js/myCtrl.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/slick.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/flowtype.js"></script>
 	</head>

@@ -54,4 +54,17 @@ $(function(){
 })
 </script>
 <script src="<?php bloginfo( 'template_directory' );?>/js/main.js"></script>
+<script>
+app.controller('myCtrl', function($scope,$timeout){
+	$scope.id = $("#post_latest").text();
+	$scope.layout = $scope.id;
+	$scope.layoutx = $scope.id;
+	$scope.check = function(x) {
+		$scope.layout = x;
+		$timeout(function() {
+			$scope.layoutx = $scope.layout;
+		},250)
+	};
+});
+</script>
 </html> 
