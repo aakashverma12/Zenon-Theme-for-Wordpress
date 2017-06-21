@@ -17,8 +17,6 @@
 			<?php
 			global $page, $paded;
 			wp_title('|', 'true', 'right');
-			bloginfo('name');
-			echo " | ".get_bloginfo('description', 'display');
 			?>
 		</title>
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' );?>/style/slick.css">
