@@ -1,6 +1,6 @@
 <?php
 /* * Zenon Theme Functions
-    * @versions 1
+    * @version 1
 */
 if (!isset($content_width) ) 
 { $content_width = 645 ;}
@@ -41,6 +41,13 @@ function create_custom_post() {
   register_post_type('members', $args ); 
 }
 
+function get_all_members_posts( $query ) {
+    if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'members' ) ) {
+        $query->set( 'posts_per_page', '-1' );
+    }
+}
+
+add_action( 'pre_get_posts', 'get_all_members_posts' );
 add_action( 'after_setup_theme', 'zenon_setup' );
 add_action( 'init', 'register_my_menus' );
 add_action( 'init', 'create_custom_post' );

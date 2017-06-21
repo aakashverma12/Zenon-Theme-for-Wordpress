@@ -69,10 +69,12 @@ $(document).ready(function(){
 	
 	// slick Carousel
 	$('.slick-carousel').slick({
+		useTransform: true,
 		arrows:false,
 		autoplay: true,
+		speed: 2000,
 		autoplaySpeed: 4000,
-		cssEase: 'ease-out',
+		cssEase: 'cubic-bezier(0.19, 1, 0.22, 1)',
 		pauseOnFocus:false,
 		pauseOnHover:false,
 	});

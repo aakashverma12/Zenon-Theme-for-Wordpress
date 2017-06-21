@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width" />
+        <meta title="<?php echo bloginfo('name');?>" />
+        <meta description="<?php echo get_bloginfo('description', 'display');?>" />
+        <meta keywords="Manan, Technology, Coding, YMCA university, Club, IT" />
+        <meta author="Aakash Verma"/>
 		<title>
 			<?php
 			global $page, $paded;
@@ -21,16 +25,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" >
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/jquery.shuffleText.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myApp.js"></script>
-		<script src="<?php bloginfo( 'template_directory' );?>/js/myCtrl.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/slick.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/flowtype.js"></script>
 	<style>
@@ -181,7 +183,7 @@
 					text-align: center;
 					transform: all .4s;
 					text-decoration: none;">
-			<div style="color: white;border:2px solid white;padding: 2%;">
+			<div style="color: white;border:2px solid white;padding: 2%;background-color: rgba(20, 20, 20, 0.20)">
 				Our RockStars
 			</div><br>
 			<i class="fa fa-facebook-square"></i>&nbsp;
@@ -191,6 +193,14 @@
 		<script>
 			$('.fa-facebook-square').click(function() {
 				window.location.href = "<?php echo get_the_author_meta('facebook', $post->post_author);?>";
+			});
+			$('.fa-instagram').click(function() {
+				var w = window.open('https://www.instagram.com/manantechnosurge/','_blank');
+				w.focus();
+			});
+			$('.fa-youtube-play').click(function() {
+				var w = window.open('http://ocul.in/MananYoutube','_blank');
+				w.focus();
 			});
 		</script>
 	</div>
