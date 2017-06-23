@@ -33,7 +33,9 @@
 		<script src="<?php bloginfo( 'template_directory' );?>/js/myApp.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/slick.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' );?>/js/flowtype.js"></script>
+		<script src="<?php bloginfo( 'template_directory' );?>/js/parallax.min.js"></script>
 	</head>
+
 <body style="background-color: rgb(20, 20, 20);transition: all 1s" >
 
 <!-- The Loader -->
@@ -45,11 +47,11 @@
 
 <!-- The Carousel -->
 <div class="slick-carousel col-md-13 row" style="z-index: 0;">
-  <div><img class="imgc" src="<?php bloginfo( 'template_directory' );?>/images/1.jpg"></div>
-  <div><img class="imgc" src="<?php bloginfo( 'template_directory' );?>/images/2.jpg"></div>
-  <div><img class="imgc" src="<?php bloginfo( 'template_directory' );?>/images/3.jpg"></div>
-  <div><img class="imgc" src="<?php bloginfo( 'template_directory' );?>/images/4.jpg"></div>
-  <div><img class="imgc" src="<?php bloginfo( 'template_directory' );?>/images/5.jpg"></div>
+  <div><img class="imgc" id="im1" src="<?php bloginfo( 'template_directory' );?>/images/12.jpg"></div>
+  <div><img class="imgc" id="im2" src="<?php bloginfo( 'template_directory' );?>/images/13.jpg"></div>
+  <div><img class="imgc" id="im3" src="<?php bloginfo( 'template_directory' );?>/images/15.jpg"></div>
+  <div><img class="imgc" id="im4" src="<?php bloginfo( 'template_directory' );?>/images/14.jpg"></div>
+  <div><img class="imgc" id="im5" src="<?php bloginfo( 'template_directory' );?>/images/16.jpg"></div>
 </div>
 <!-- The Entry -->
 	<div class="black container-fluid" style="position: absolute;top:0%;height: 100%;background-color: rgb(20,20,20);width: 100%;transition: all 1s;">
@@ -72,7 +74,7 @@
 		<?php wp_nav_menu( array( 'primary-menu' => __( 'Primary Menu' ) ) ); ?>
 		</div>
 		<div class="social" style="text-decoration: none">
-			&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook-square"></i>&nbsp;
+			<i class="fa fa-facebook-square"></i>&nbsp;
 			&nbsp;<i class="fa fa-instagram"></i>&nbsp;
 			&nbsp;<i class="fa fa-youtube-play"></i>&nbsp;
 		</div>
@@ -80,6 +82,13 @@
 			$('.fa-facebook-square').click(function() {
 				window.location.href = "<?php echo get_the_author_meta('facebook', $post->post_author);?>";
 			});
+			if ($(window).width() < 500) {
+				$("#im1").attr("src","<?php bloginfo( 'template_directory' );?>/images/12m.jpg");
+				$("#im2").attr("src","<?php bloginfo( 'template_directory' );?>/images/13m.jpg");
+				$("#im3").attr("src","<?php bloginfo( 'template_directory' );?>/images/14m.jpg");
+				$("#im4").attr("src","<?php bloginfo( 'template_directory' );?>/images/15m.jpg");
+				$("#im5").attr("src","<?php bloginfo( 'template_directory' );?>/images/16m.jpg");
+			}
 		</script>
 	</div>
 	</div>

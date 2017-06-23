@@ -78,7 +78,40 @@ $(document).ready(function(){
 		pauseOnFocus:false,
 		pauseOnHover:false,
 	});
-
+	
+	$('.center').slick({
+		  useTransform: true,
+		  centerMode: true,
+		  centerPadding: '60px',
+		  slidesToShow: 3,
+		  autoplay: true,
+		  autoplyaSpeed: 1000,
+		  cssEase: 'cubic-bezier(0.19, 1, 0.22, 1)',	
+		  arrows: false,
+		  infinite: true,
+		  pauseOnFocus:false,
+		  slidesToShow: 4,
+		  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 3
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
 	// Responsive Jquery
 	if ($(window).width() < 960 && $(window).width() > 500) {
    			$(".side_post_wrapper").css('transform', 'translateX(0px)');

@@ -12,8 +12,8 @@ Created by Aakash With <span class="fa fa-heart"></span> for <?php bloginfo('nam
 $(function(){
 	$(".experience").click(function() {
 		$(".wrapper").css({"background-color":"transparent"});
-		$(".site_title_name").css('border-right', '2px solid black');
-		$(".site_title_name, .site_title_des").css("color","rgb(20,20,20)");
+		$(".site_title_name").css('border-right', '2px solid white');
+		$(".site_title_name, .site_title_des").css("color","white");
 		$(".wrapper_body").css("color","white");
 		$(this).fadeOut('slow',function(){
 			setTimeout(function(){
@@ -26,14 +26,14 @@ $(function(){
 				});
 				$('.menu').css('visibility', 'visible');
 				if ($(window).width() > 960) {
-					$('.black').css('background-color', 'transparent');
+					$('.black').css('background-color', 'rgba(0,0,0,.2)');
 					$('.site_title').css({
-						'background-color': 'rgba(255,255,255,.2)',
+						'background-color': 'transparent',
 	                  	'border': '2px solid white'
 					});
 				}
 				else {
-					$('.black').css('background-color', 'rgba(255,255,255,.2)');
+					$('.black').css('background-color', 'rgba(0,0,0,.2)');
 					$('.site_title').css({
 						'background-color': 'transparent',
 	                  	'border': '0px solid white'

@@ -1,32 +1,6 @@
 <?php get_header();?>
-<!-- For Testing
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
-        <meta name="viewport" content="width=device-width" />
-		<title>
-			<?php
-			global $page, $paded;
-			wp_title('|', 'true', 'right');
-			bloginfo('name');
-			echo " | ".get_bloginfo('description', 'display');
-			?>
-		</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" >
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<script src="<?php bloginfo( 'template_directory' );?>/js/jquery.shuffleText.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
-		<script src="<?php bloginfo( 'template_directory' );?>/js/myApp.js"></script>
-		<script src="<?php bloginfo( 'template_directory' );?>/js/myCtrl.js"></script>
-	</head>
-<body style="background-color: white;transition: all 1s;color:black">  -->
+
+
 <div class="wrapper_body container-fluid" ng-app="myApp" ng-controller="myCtrl" style="border-top:2px solid white">
 
 	<!-- The Spectrum New -->
@@ -83,5 +57,61 @@
 	<div class="col-md-2 sidebar_wrapper">
 			<?php get_sidebar();?>
 	</div>
+</div>
+
+<div class="col-md-12 container s1" style="background-image:url('<?php bloginfo( 'template_directory' );?>/images/s1.jpg')">
+<div style="text-align: center;color:white;padding: 1%;border-top: 1px solid black;font-size: 3em" class="col-md-12">
+	Our Source Code
+</div>
+<div class="col-md-12 slide container center" style="border-bottom: 1px solid black;">
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/sec1.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Vipin Khushu<br><span style="font-size:.8em">Secy</span>
+			</div>
+		</div>
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/sec2.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Sameer Taneja<br><span style="font-size:.8em">Secy</span>
+			</div>
+		</div>
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/sec3.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Ayushi Mittal<br><span style="font-size:.8em">Secy</span>
+			</div>
+		</div>
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/jsec1.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Naman Sachdeva<br><span style="font-size:.8em">JSec</span>
+			</div>
+		</div>
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/jsec2.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Gaurav Yadav<br><span style="font-size:.8em">JSec</span>
+			</div>
+		</div>
+		<div class="cardx">
+			<div style="width: 100%;height: 70%;padding: 2%">
+				<img src="<?php bloginfo( 'template_directory' );?>/images/jsec3.jpg" class="people">
+			</div>
+			<div style="width: 100%;height: 30%;text-align: center;font-size: 2em;padding-top:1%">
+				Hemand Bansal<br><span style="font-size:.8em">JSec</span>
+			</div>
+		</div>
+</div>
 </div>
 <?php get_footer();?>
