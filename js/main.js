@@ -85,7 +85,7 @@ $(document).ready(function(){
 		  centerPadding: '60px',
 		  slidesToShow: 3,
 		  autoplay: true,
-		  autoplyaSpeed: 1000,
+		  autoplyaSpeed: 800,
 		  cssEase: 'cubic-bezier(0.19, 1, 0.22, 1)',	
 		  arrows: false,
 		  infinite: true,
